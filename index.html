@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center><h1>Welcome to your Calculator</h1></center>
+    <center><div id="cal">
+    <form name="calculator">
+    <input type="text" name="answer" />
+        <br/>
+        <div id="row1">
+        <input type="button" onclick="calculator.answer.value += 9" value="9"/>
+        <input type="button" onclick="calculator.answer.value += 8" value="8"/>
+        <input type="button" onclick="calculator.answer.value += 7" value="7"/>
+        <input type="button" onclick="calculator.answer.value += '+'" value="+"/>
+        <br />
+        </div>
+    
+        <div id="row2">
+        <input type="button" onclick="calculator.answer.value += 6" value="6"/>
+        <input type="button" onclick="calculator.answer.value += 5" value="5"/>
+        <input type="button" onclick="calculator.answer.value += 4" value="4"/>
+        <input type="button" onclick="calculator.answer.value += '-'" value="-"/>
+        <br />
+        </div>
+        
+        <div id="row3">
+        <input type="button" onclick="calculator.answer.value += 3" value="3"/>
+        <input type="button" onclick="calculator.answer.value += 2" value="2"/>
+        <input type="button" onclick="calculator.answer.value += 1" value="1"/>
+        <input type="button" onclick="calculator.answer.value += '*'" value="*"/>
+        <br />
+        </div>
+        
+        <div id="row4">
+        <input type="button" onclick="calculator.answer.value = ''" value="c"/>
+        <input type="button" onclick="calculator.answer.value += '/'" value="/"/>
+        <input type="button" onclick="calculator.answer.value += 0" value="0"/>
+        <input type="button" onclick="calculator.answer.value = eval(calculator.answer.value)" value="="/>
+        <br />
+        </div>
+
+    </form>
+    </div></center>
+    
+</body>
+</html>
